@@ -817,3 +817,11 @@
   817  docker container run --name ccce -it --network test ubuntu:14.04
   818  history 
   819  history > 20-06-2020-docker-network.txt
+
+ docker container run -it -e MYSQL_ROOT_PASSWORD=somewordpress -e  MYSQL_DATABASE=wordpress -e  MYSQL_USER=wordpress -e MYSQL_PASSWORD=wordpress -d mysql:5.7
+  834  docker container inspect d37
+  835  cat test.txt 
+  836  docker container run -it -e WORDPRESS_DB_HOST=172.17.0.2:3306 -e WORDPRESS_DB_USER=wordpress -e WORDPRESS_DB_PASSWORD=wordpress -e WORDPRESS_DB_NAME=wordpress -d wordpress:latest
+  837  docker container run -it -e WORDPRESS_DB_HOST=172.17.0.2:3306 -e WORDPRESS_DB_USER=wordpress -e WORDPRESS_DB_PASSWORD=wordpress -e WORDPRESS_DB_NAME=wordpress -d -p 9000:80 wordpress:latest
+  838  history 
+
